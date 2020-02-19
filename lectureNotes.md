@@ -14,8 +14,9 @@ React Native
     - Java
 3) Expo Framework
 4) React Native Components
-5)
-
+5) How to Style Components
+6) Creating & Nesting Components
+7) How does React Native work
 
 
 # Introduction to React Native
@@ -36,7 +37,42 @@ A framework for React Native that streamlines the development & deployment proce
 - Abstracts React Native setup & provides excellent development tools so you don't need to deal with XCode or Android Studio and emulators
 - Has most features of React Native but are missing some
 - Makes over the air updates easier (You can do this without expo it's just a little harder. Also, OTA updates should be used for patches that don't change app functionality. Apple and Google do not like it when you make big changes to applications without going through their approval process)
+- App.js is the default root component
 
 # React Native Components
 React Native doesn't use HTML elements like regular ReactJS instead everything that you render is a component from the React Native library. [React Native Components API](https://facebook.github.io/react-native/docs/activityindicator)
+
+- Cant' use HTML elements
+
+# Styling Components
+
+React Native exposes a StyleSheet function used to create objects that can be fed into components to be used as styling. Similar to inline CSS you can use in React.
+
+- Most properties found in CSS have a React Native equivalent
+- Styling relies heavily on a Flexbox-like design
+- There are two units available: percentages as a string and a arbitrary numbered unit which represents a set amount of pixels. The amount of pixels the unit represents is dependent on the dpi of the screen. https://facebook.github.io/react-native/docs/pixelratio.html#content
+
+# Creating & Nesting Components
+
+- You can create components the same way you do in React
+- You can nest components the same way you do using JSX in React
+
+# How does React Native work
+
+- Regular ReactJS turns React Components into objects which are then translated to javascript & html elements
+- React Native compiles React Components into Native mobile components
+
+## Different from other frameworks
+
+2) Native UI
+- React Native -> Compiles to Native UI but bridges logic using Javascript. Components are Native but when a component is clicked it executes javascript code
+- Xamarin, .NET Mobile framework -> Compiles to Native UI but bridges logic using C#
+- Flutter -> Compiles to native
+- Pretty close to native
+
+1) WebViews / Hybrid apps
+- Cordova, Phonegap, Ionic are all webview frameworks which are basically HTML, CSS, JavaScript viewed through a mobile app
+- Same codebase for mobile and web
+
+# Debugging 
 
