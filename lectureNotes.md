@@ -74,5 +74,17 @@ React Native exposes a StyleSheet function used to create objects that can be fe
 - Cordova, Phonegap, Ionic are all webview frameworks which are basically HTML, CSS, JavaScript viewed through a mobile app
 - Same codebase for mobile and web
 
-# Debugging 
+# Debugging
+
+Press d inside console to open up a browser that will print stdout
+
+# Navigation using Stack
+
+React native does not use routes to handle navigation. It has no built in navigation what so ever. We're going to use a community created solution to implement different views for our app
+
+## Installing React Native Stack
+We need to install Stack
+1) `npm install @react-navigation/native @react-navigation/stack`
+Then we need to install peer dependencies depending on our platform. With express we need to:
+2) `expo install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view`
 
