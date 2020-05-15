@@ -28,7 +28,7 @@ export default function App() {
       <Stack.Navigator>
         <Stack.Screen
           name="Index"
-          component={({navigation}) => { // Stack.Screen will inject a navigation prop to child components
+          children={({navigation}) => {
             return(
               <View style={styles.container}>
                 <Header/>

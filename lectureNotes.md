@@ -49,7 +49,7 @@ React Native doesn't use HTML elements like regular ReactJS instead everything t
 React Native exposes a StyleSheet function used to create objects that can be fed into components to be used as styling. Similar to inline CSS you can use in React.
 
 - Most properties found in CSS have a React Native equivalent
-- Styling relies heavily on a Flexbox-like design
+- Styling relies heavily on a Flexbox-like design https://facebook.github.io/react-native/docs/flexbox
 - There are two units available: percentages as a string and a arbitrary numbered unit which represents a set amount of pixels. The amount of pixels the unit represents is dependent on the dpi of the screen. https://facebook.github.io/react-native/docs/pixelratio.html#content
 
 # Creating & Nesting Components
@@ -88,3 +88,8 @@ We need to install Stack
 Then we need to install peer dependencies depending on our platform. With express we need to:
 2) `expo install react-native-reanimated react-native-gesture-handler react-native-screens react-native-safe-area-context @react-native-community/masked-view`
 
+## Configuring RN Stack
+
+1) import React Native Gesture Handler in your top level component `import 'react-native-gesture-handler'`
+2) Wrap your application in a `NavigationContainer` from `@react-navigation/native` package
+3) 
